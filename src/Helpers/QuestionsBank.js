@@ -5,7 +5,7 @@ export const Questions = [
     optionB: 'Minia University',
     optionC: 'Cairo University',
     optionD: 'Edx',
-    answer: 'C',
+    answer: 'A',
   },
   {
     prompt: 'What is Mo Salah fav social app',
@@ -24,11 +24,19 @@ export const Questions = [
     answer: 'C',
   },
   {
-    prompt: 'What is Best Education Channel on Youtube',
-    optionA: 'Maximilian',
-    optionB: 'Brad Traversy',
-    optionC: 'Data Science',
-    optionD: 'NewBies',
+    prompt: 'What is Docker',
+    optionA: 'Virtual Computer',
+    optionB: 'Container Engine',
+    optionC: 'Container Orchestrator',
+    optionD: 'Configuration Manager',
     answer: 'B',
+  },
+  {
+    prompt: 'Mohamed Alaa Fav Cloud Provider',
+    optionA: 'Azure',
+    optionB: 'Linode',
+    optionC: 'AWS',
+    optionD: 'DigitalOcean',
+    answer: 'C',
   },
 ];
