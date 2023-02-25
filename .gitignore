@@ -5,7 +5,6 @@
 /.pnp
 .pnp.js
 /Helpers/QuestionsBank.js
-
 # testing
 /coverage
 
