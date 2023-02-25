@@ -1,14 +1,14 @@
 // actual quiz
 
-import QuizContext from "../Helpers/Context";
-import { useContext, useState } from "react";
-import { Questions } from "./../Helpers/QuestionsBank";
+import QuizContext from '../Helpers/Context';
+import { useContext, useState } from 'react';
+import { Questions } from '../Helpers/QuestionsBank';
 
 export default function Quiz() {
   const { score, setScore } = useContext(QuizContext);
   const { setGameState } = useContext(QuizContext);
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [optionChosen, setoptionChosen] = useState("");
+  const [optionChosen, setoptionChosen] = useState('');
 
   // every click on nextQuestion will compare the optionChosen with the correct
   // answer,
@@ -26,7 +26,7 @@ export default function Quiz() {
     if (Questions[currentQuestion].answer == optionChosen) {
       setScore(score + 1);
     }
-    setGameState("endScreen");
+    setGameState('endScreen');
   };
 
   return (
@@ -38,22 +38,22 @@ export default function Quiz() {
       </header>
 
       <ul className="options flex justify-center flex-col space-y-3">
-        <li onClick={() => setoptionChosen("A")} className="options-item">
+        <li onClick={() => setoptionChosen('A')} className="options-item">
           <button className="answersBtn">
             {Questions[currentQuestion].optionA}
           </button>
         </li>
-        <li onClick={() => setoptionChosen("B")} className="options-item">
+        <li onClick={() => setoptionChosen('B')} className="options-item">
           <button className="answersBtn">
             {Questions[currentQuestion].optionB}
           </button>
         </li>
-        <li onClick={() => setoptionChosen("C")} className="options-item">
+        <li onClick={() => setoptionChosen('C')} className="options-item">
           <button className="answersBtn">
             {Questions[currentQuestion].optionC}
           </button>
         </li>
-        <li onClick={() => setoptionChosen("D")} className="options-item">
+        <li onClick={() => setoptionChosen('D')} className="options-item">
           <button className="answersBtn">
             {Questions[currentQuestion].optionD}
           </button>
