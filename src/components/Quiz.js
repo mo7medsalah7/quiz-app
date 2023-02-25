@@ -2,7 +2,7 @@
 
 import QuizContext from '../Helpers/Context';
 import { useContext, useState } from 'react';
-import { Questions } from '../Helpers/QuestionsBank';
+import { Questions } from '../Helpers/QuestionsBank.js';
 
 export default function Quiz() {
   const { score, setScore } = useContext(QuizContext);
